@@ -31,7 +31,7 @@
     LAYOUT
 ------------------*/
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     /* padding-left: 20px;
@@ -40,6 +40,7 @@
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .gap-10 {
@@ -60,18 +61,19 @@
     TYPOGRAPHY
 ------------------*/
 body {
-    font-family: "Roboto", serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /*----------------
     BUTTONS
 ------------------*/
 .btn {
-    background-color: transparent;
+    background-color: white;
     font-family: inherit;
     border: none;
     padding: 6px 12px;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .btn-large {
@@ -88,10 +90,145 @@ body {
     HEADER
 ------------------*/
 
+header{
+    background-color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    padding: 10px;
+}
+
+header h1{
+    font-family: "Nerko One", cursive;
+    color: #ff9614;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+
 /*----------------
     MAIN
 ------------------*/
 
+main{
+    background-color: #f6f5f3;
+    padding: 20px;
+}
+
+.intro h2{
+    color: #4e3969;
+    font-size: 25px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.intro h3{
+    color: #aab1c8;
+    font-weight: 300;
+    font-size: 14px;
+}
+.intro h2 span{
+    display: none;
+}
+
+.intro .video, .intro .descr{
+    width: 100%;
+}
+
+.intro .video img{
+    width: 100%;
+}
+
+.img-small{
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+
+.descr li{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.descr h4{
+    padding: 20px 0;
+}
+
+.descr{
+    background-color: white;
+    padding: 30px;
+}
+
+.social{
+    padding: 50px 0;
+}
+
+.social .row{
+    justify-content: space-between;
+}
+
+.social .row span{
+    display: none;
+}
+
+.presentation h2{
+    font-weight: 400;
+}
+
+
+
 /*----------------
     FOOTER
 ------------------*/
+
+/*----------------
+    RESPONSIVE
+------------------*/
+
+
+@media screen and (min-width: 768px) {
+
+    header h1{
+        text-align: left;
+    }
+
+    .intro h2 span{
+        display: inline;
+    }
+    
+    /*main{
+        padding: 30px;
+    }*/
+
+    .img-small{
+        float: left;
+    }
+
+    .social .row .btn{
+        padding: 10px 50px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .intro .video{
+        width: 70%;
+    }
+
+    .intro .descr{
+        width: 30%;
+    }
+
+    .social .row span{
+        display: inline;
+    }
+
+    .social .row .btn{
+        padding: 10px 30px;
+    }
+
+}
