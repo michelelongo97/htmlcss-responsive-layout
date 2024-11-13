@@ -31,7 +31,7 @@
     LAYOUT
 ------------------*/
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     /* padding-left: 20px;
@@ -174,8 +174,19 @@ main{
     display: none;
 }
 
+.banner{
+    margin-bottom: 20px;
+    display: none;
+}
+
 .presentation h2{
     font-weight: 400;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 3dvh;
+    margin-right: 90%;
 }
 
 
@@ -195,6 +206,10 @@ main{
         text-align: left;
     }
 
+    .intro h2{
+        font-size: 40px;
+    }
+
     .intro h2 span{
         display: inline;
     }
@@ -211,9 +226,27 @@ main{
         padding: 10px 50px;
     }
 
+    .banner{
+        display: block;
+    }
+
+    ul{
+        display: flex;
+    }
+    
+    .descr ul{
+        flex-wrap: wrap;
+        margin-right: 40px;
+        justify-content: space-between;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
+
+    .intro h2{
+        font-size: 50px;
+    }
 
     .intro .video{
         width: 70%;
@@ -229,6 +262,10 @@ main{
 
     .social .row .btn{
         padding: 10px 30px;
+    }
+
+    ul{
+        display: block;
     }
 
 }
