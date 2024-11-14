@@ -278,8 +278,12 @@ footer{
     .descr h4{
         padding-left: 20px;
 
-}
+    }
 
+    li:last-child{
+        margin-right: 250px;
+    }
+}
 @media screen and (min-width: 992px) {
 
     .intro h2{
@@ -319,6 +323,10 @@ footer{
 
     h5{
         padding-left: 10px;
+    }
+
+    li:last-child{
+        margin-right: 0px;
     }
 
 }
