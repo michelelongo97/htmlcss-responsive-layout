@@ -187,6 +187,7 @@ hr{
     margin-top: 20px;
     margin-bottom: 3dvh;
     margin-right: 90%;
+    color: #ff9614;
 }
 
 
@@ -194,6 +195,35 @@ hr{
 /*----------------
     FOOTER
 ------------------*/
+
+footer{
+    background-color: #7c69a4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-top{
+    color: white;
+    
+}
+
+.footer-top p{
+    padding: 10px;
+}
+
+.footer-top h5{
+    font-size: 18px;
+    
+}
+
+.footer-bottom a{
+    color: white;
+    padding: 20px;
+}
+
+.footer-bottom .row{
+    justify-content: space-around;
+}
 
 /*----------------
     RESPONSIVE
@@ -236,9 +266,17 @@ hr{
     
     .descr ul{
         flex-wrap: wrap;
-        margin-right: 40px;
         justify-content: space-between;
     }
+
+    .descr li{
+        padding: 0px 20px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+    }
+
+    .descr h4{
+        padding-left: 20px;
 
 }
 
@@ -266,6 +304,21 @@ hr{
 
     ul{
         display: block;
+    }
+
+    .descr h4{
+        padding-bottom: 30px;
+    }
+
+    footer{
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h5{
+        padding-left: 10px;
     }
 
 }
